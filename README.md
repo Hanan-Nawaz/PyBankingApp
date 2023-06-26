@@ -63,6 +63,4 @@ For more information, please visit:
 
 ## License
 
-This project is licensed under the MIT License.
-
-Feel free to customize and modify this template further to suit the specific details and requirements of your PyBankingApp repository.
+This project is licensed under the `MIT License`.
