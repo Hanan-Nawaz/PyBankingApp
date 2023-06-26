@@ -8,6 +8,11 @@ PyBankingApp is a Python practice project that focuses on essential programming 
 - Balance management and transaction tracking
 - Secure file-based storage for customer data
 - Error handling and input validation
+- View account balance
+- View transaction history
+- Close account
+- View account details
+- Close the application
 - Modular and well-structured codebase following OOP principles
 
 ## Installation
