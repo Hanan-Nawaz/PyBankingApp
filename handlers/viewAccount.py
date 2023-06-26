@@ -8,7 +8,3 @@ class viewAccount():
         cnic = int(input("Please Enter CNIC : "))
 
         maindb.getInfo(accountNumber, cnic)
-
-        
-
-

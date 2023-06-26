@@ -1,5 +1,6 @@
 from handlers.addAccount import addAccount
 from handlers.viewAccount import viewAccount
+from handlers.viewBalance import viewBalance
 
 print("----------------------")
 print("|    Bank of NUML    |")
@@ -34,7 +35,7 @@ match choiceOfUser:
         print(choiceOfUser)
     
     case 4 : 
-        print(choiceOfUser)
+        viewBalance.viewBalance()
     
     case 5 :
         print(choiceOfUser)

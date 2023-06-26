@@ -5,7 +5,7 @@ class maindb():
 
     def addInfo(name, cnic, fatherName, initialBalance, Date): 
         accountNumber = rand.randint(1, 10000000)
-        file = open('accountDetails.csv', "a")
+        file = open('File/accountDetails.csv', "a")
         dataOfBenificary = str(accountNumber) + "," + str(name) + "," + str(cnic) + "," + str(fatherName) + "," + str(initialBalance) + "," + str(Date) + "\n"
         file.write(dataOfBenificary)
         file.close()
@@ -15,7 +15,7 @@ class maindb():
     def getInfo(accountNumber, cnic):
 
         # Open the CSV file
-        with open('accountDetails.csv', 'r') as file:
+        with open('File/accountDetails.csv', 'r') as file:
             # Create a CSV reader object
              reader = csv.reader(file)
 
@@ -34,7 +34,20 @@ class maindb():
                         break
                 
                 if status == 0:
-                    print("No Records Found")    
+                    print("No Records Found") 
+
+    def getBalance(accountNumber):
+
+        with open('File/accountDetails.csv', 'r') as file:
+
+            reader = csv.reader(file)
+
+            for row in reader:
+                if str(accountNumber) == str(row[0]):
+                    print("Your Account Balance is " + str(row[4]) + " Mr. " + str(row[1]))
+                else:
+                    print("Wrong Account Number")
+
             
         
 
