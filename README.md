@@ -15,7 +15,7 @@ PyBankingApp is a Python practice project that focuses on essential programming 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/PyBankingApp.git
+   git clone https://github.com/Hanan-Nawaz/PyBankingApp.git
 
 ## Usage
 
